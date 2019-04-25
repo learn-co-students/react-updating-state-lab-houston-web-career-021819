@@ -4,10 +4,10 @@ import ReactDOM from 'react-dom';
 import DigitalClicker from './components/DigitalClicker';
 import YouTubeDebugger from './components/YouTubeDebugger';
 
-ReactDOM.render(
+ ReactDOM.render(
   <div>
     <DigitalClicker />
-    <YouTubeDebugger />
+   	<YouTubeDebugger />
   </div>,
   document.getElementById('global')
 );
