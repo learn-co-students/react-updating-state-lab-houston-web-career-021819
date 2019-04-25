@@ -33,17 +33,6 @@ class YouTubeDebugger extends React.Component {
         })
     }
 
-    // state = {
-//     errors: [],
-//     user: null,
-//     settings: {
-//         bitrate: 8,
-//         video: {
-//             resolution: '1080p'
-//         }
-//     }
-// }
-
     handleResolution = () => {
         this.setState({
             ...this.state, 
