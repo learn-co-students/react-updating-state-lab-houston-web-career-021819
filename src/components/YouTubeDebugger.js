@@ -14,15 +14,6 @@ class YouTubeDebugger extends React.Component {
         }
     }
 
-    render() {
-        return (
-            <div>
-                <button className='bitrate' onClick={this.handleBitrate}> {this.state.settings.bitrate} </button>
-                <button className='resolution' onClick={this.handleResolution}> {this.state.settings.video.resolution} </button>
-            </div>
-        )
-    }
-
     handleBitrate = () => {
         this.setState({
             ...this.state,
@@ -45,6 +36,14 @@ class YouTubeDebugger extends React.Component {
         })
     }
 
+    render() {
+        return (
+            <div>
+                <button className='bitrate' onClick={this.handleBitrate}>{this.state.settings.bitrate}</button>
+                <button className='resolution' onClick={this.handleResolution}>{this.state.settings.video.resolution}</button>
+            </div>
+        )
+    }
 }
 
 
